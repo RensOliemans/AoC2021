@@ -13,7 +13,7 @@ def solution(lines):
             return aim, hpos + x, depth + x * aim
         return aim + x, hpos, depth
 
-    aim, hpos, depth = reduce(lambda a, b: add(a, b), lines, (0, 0, 0))
+    aim, hpos, depth = reduce(add, lines, (0, 0, 0))
     return hpos * depth
 
 
