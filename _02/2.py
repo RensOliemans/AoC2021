@@ -1,6 +1,6 @@
 from functools import reduce
 
-from _02 import puzzle, measure, test
+from _02 import puzzle, measure
 
 
 def solution(lines):
