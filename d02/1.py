@@ -1,4 +1,5 @@
-from _02 import measure, puzzle
+from d02 import puzzle
+from measure import measure
 
 
 def ollie(f):

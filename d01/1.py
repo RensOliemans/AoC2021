@@ -1,4 +1,5 @@
-from _01 import puzzle, measure
+from d01 import puzzle
+from measure import measure
 
 
 def solution(lines):
