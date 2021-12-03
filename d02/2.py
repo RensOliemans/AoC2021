@@ -1,8 +1,5 @@
 from functools import reduce
 
-from d02 import puzzle
-from measure import measure
-
 
 def solution(lines):
     lines = [(x[0], (-1 if x[0] == 'u' else 1) * int(x[-2])) for x in lines]
@@ -17,5 +14,7 @@ def solution(lines):
 
 
 if __name__ == '__main__':
+    with open('input') as f:
+        puzzle = f.readlines()
+
     print(solution(puzzle))
-    measure(lambda: solution(puzzle))

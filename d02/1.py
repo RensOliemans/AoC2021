@@ -1,7 +1,3 @@
-from d02 import puzzle
-from measure import measure
-
-
 def ollie(f):
     d = {x: sum([int(y[-2]) for y in f if y[0] == x]) for x in ['u', 'd', 'f']}
     return (d['d'] - d['u']) * d['f']
@@ -13,7 +9,7 @@ def rikkert(f):
 
 
 if __name__ == '__main__':
-    print(ollie(puzzle))
+    with open('input') as f:
+        puzzle = f.readlines()
 
-    measure(lambda: ollie(puzzle))
-    measure(lambda: rikkert(puzzle))
+    print(ollie(puzzle))
